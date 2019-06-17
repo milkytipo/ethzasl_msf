@@ -45,7 +45,8 @@ MSF_MAKE_EIGEN_TYPES(8)
 MSF_MAKE_EIGEN_TYPES(9)
 
 namespace constants{
-  const static Vector3 GRAVITY((Vector3() << 0, 0, 9.80834).finished());  // At 47.37 lat (Zurich).
+//  const static Vector3 GRAVITY((Vector3() << 0, 0, 9.80834).finished());  // At 47.37 lat (Zurich).
+  const static Vector3 GRAVITY((Vector3() << 0, 0, 9.8128).finished());  // At 52.31 lat (Berlin).
   const static double INVALID_TIME = -1;
   const static int INVALID_SEQUENCE = -1;
   const static int INVALID_ID = -1;

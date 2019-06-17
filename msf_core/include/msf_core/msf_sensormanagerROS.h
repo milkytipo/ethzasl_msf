@@ -343,7 +343,7 @@ struct MSF_SensorManagerROS : public msf_core::MSF_SensorManager<EKFState_T> {
       transform.setRotation(tf::Quaternion(ori.x(), ori.y(), ori.z(), ori.w()));
       tf_broadcaster_.sendTransform(
           tf::StampedTransform(
-              transform, ros::Time::now() /*ros::Time(latestState->time_)*/,
+              transform,/*ros::Time::now()*/ros::Time(state_const.time),
               msf_output_frame_, "state"));
     }
 

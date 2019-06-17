@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="60ad03fe-26e6-42da-938f-0673db4c7b20" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/eth_msf.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eth_msf.creator" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eth_msf.files" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eth_msf.includes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msf_core/cfg/MSF_Core.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/msf_core/cfg/MSF_Core.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msf_core/include/msf_core/msf_sensormanagerROS.h" beforeDir="false" afterPath="$PROJECT_DIR$/msf_core/include/msf_core/msf_sensormanagerROS.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msf_core/include/msf_core/msf_types.h" beforeDir="false" afterPath="$PROJECT_DIR$/msf_core/include/msf_core/msf_types.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msf_updates/launch/viconpos_sensor.launch" beforeDir="false" afterPath="$PROJECT_DIR$/msf_updates/launch/viconpos_sensor.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/msf_updates/viconpos_sensor_fix.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/msf_updates/viconpos_sensor_fix.yaml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/msf_sensormanagerROS.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="310" column="19" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/msf_state.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="679">
+              <caret line="239" column="21" selection-start-line="239" selection-start-column="7" selection-end-line="239" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/implementation/msf_state_inl.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="361" column="36" selection-start-line="361" selection-start-column="35" selection-end-line="361" selection-end-column="36" />
+              <folding>
+                <element signature="e#1420#1472#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2550" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/implementation/msf_core_inl.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>advertise</find>
+      <find>pubPose_</find>
+      <find>msgPose</find>
+      <find>ToPoseMsg</find>
+      <find>msgCorrect_</find>
+      <find>state</find>
+      <find>topose</find>
+      <find>pubCorrect_</find>
+      <find>ToFullStateMsg</find>
+      <find>GetPoseCovariance</find>
+      <find>P</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/msf_core/include/msf_core/msf_sensormanagerROS.h" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/ethzasl_msf.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="293" />
+    <option name="y" value="53" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_core" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_core" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_core" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_core" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_distort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_updates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_updates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_updates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_updates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ethzasl_msf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ethzasl_msf" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_updates" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="msf_updates" type="462c0819:PsiDirectoryNode" />
+              <item name="pose_sensor_handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="60ad03fe-26e6-42da-938f-0673db4c7b20" name="Default Changelist" comment="" />
+      <created>1559697370427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559697370427</updated>
+      <workItem from="1559697371508" duration="577000" />
+      <workItem from="1559704451284" duration="597000" />
+      <workItem from="1559705631822" duration="599000" />
+      <workItem from="1560329503748" duration="2090000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3863000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19224377" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32972974" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/implementation/msf_core_inl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2550" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/msf_sensormanagerROS.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="310" column="19" selection-start-line="310" selection-start-column="8" selection-end-line="310" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/implementation/msf_state_inl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="361" column="36" selection-start-line="361" selection-start-column="35" selection-end-line="361" selection-end-column="36" />
+          <folding>
+            <element signature="e#1420#1472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/msf_core/include/msf_core/msf_state.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="239" column="21" selection-start-line="239" selection-start-column="7" selection-end-line="239" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

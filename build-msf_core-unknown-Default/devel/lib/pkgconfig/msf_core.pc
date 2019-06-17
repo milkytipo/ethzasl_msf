@@ -1,0 +1,8 @@
+prefix=/home/wuzida/catkin_ws/src/ethzasl_msf/build-msf_core-unknown-Default/devel
+
+Name: msf_core
+Description: Description of msf_core
+Version: 1.0.1
+Cflags: -I/home/wuzida/catkin_ws/src/ethzasl_msf/build-msf_core-unknown-Default/devel/include -I/home/wuzida/catkin_ws/src/ethzasl_msf/msf_core/include -I/usr/include/eigen3
+Libs: -L/home/wuzida/catkin_ws/src/ethzasl_msf/build-msf_core-unknown-Default/devel/lib -lmsf_core -lsimilaritytransform
+Requires: roscpp sensor_msgs nav_msgs dynamic_reconfigure msf_timing tf glog_catkin glog_catkin
