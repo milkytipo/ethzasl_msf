@@ -569,7 +569,9 @@ void MSF_Core<EKFState_T>::Init(
   SetPCore(state->P);
 
   // Apply init measurement, where the user can provide additional values for P.
+
   measurement->Apply(state, *this);
+
 
   // Hack: Wait for the external propagation to get the init message.
   usleep(10000);
@@ -604,6 +606,8 @@ template<typename EKFState_T>
 void MSF_Core<EKFState_T>::AddMeasurement(
     shared_ptr<MSF_MeasurementBase<EKFState_T> > measurement) {
 
+    MSF_WARN_STREAM("Check the initialized status: " << initialized_);
+    MSF_WARN_STREAM("Check the predictionMade_ status: " << predictionMade_);
   // Return if not initialized of no imu data available.
   if (!initialized_ || !predictionMade_)
     return;
@@ -615,6 +619,7 @@ void MSF_Core<EKFState_T>::AddMeasurement(
     return;
 
   }
+
   // Check if there is still a state in the buffer for this message (too old).
   if (measurement->time < stateBuffer_.GetFirst()->time) {
     MSF_WARN_STREAM(
@@ -657,6 +662,8 @@ void MSF_Core<EKFState_T>::AddMeasurement(
     msf_timing::DebugTimer timer_meas_apply("Apply measurement");
     // Calls back core::ApplyCorrection(), which sets time_P_propagated to meas
     // time.
+      MSF_WARN_STREAM("Check the core status_wzd3"<< state);
+
     it_meas->second->Apply(state, *this);
     timer_meas_apply.Stop();
     // Make sure to propagate to next measurement or up to now if no more
