@@ -595,8 +595,7 @@ void MSF_Core<EKFState_T>::Init(
       "\tnoise_gyr:\t" << usercalc_.GetParamNoiseGyr() << std::endl <<
       "\tnoise_gyrbias:\t" << usercalc_.GetParamNoiseGyrbias() << std::endl);
 
-
-  MSF_INFO_STREAM("Core init with state: " << std::endl << state->Print());
+  MSF_INFO_STREAM("Initialized Success and Core init with state: " << std::endl << state->Print());
   initialized_ = true;
 
   msf_timing::Timing::Print(std::cout);
@@ -605,9 +604,7 @@ void MSF_Core<EKFState_T>::Init(
 template<typename EKFState_T>
 void MSF_Core<EKFState_T>::AddMeasurement(
     shared_ptr<MSF_MeasurementBase<EKFState_T> > measurement) {
-
-    MSF_WARN_STREAM("Check the initialized status: " << initialized_);
-    MSF_WARN_STREAM("Check the predictionMade_ status: " << predictionMade_);
+  //  MSF_WARN_STREAM("Check the predictionMade_ status: " << predictionMade_);
   // Return if not initialized of no imu data available.
   if (!initialized_ || !predictionMade_)
     return;
@@ -616,7 +613,12 @@ void MSF_Core<EKFState_T>::AddMeasurement(
   // measurements yet.
   if (measurement->time > stateBuffer_.GetLast()->time) {
     queueFutureMeasurements_.push(measurement);
-    return;
+//      MSF_WARN_STREAM(
+//              "the measurement is in the future where we don't have imu measurement yet "
+//              "push the measurement into queue "
+//              "[measurement: "<<timehuman(measurement->time)<<" (s) first state in "
+//                                                              "buffer: "<<timehuman(stateBuffer_.GetLast()->time)<<" (s)]");
+      return;
 
   }
 
@@ -662,8 +664,6 @@ void MSF_Core<EKFState_T>::AddMeasurement(
     msf_timing::DebugTimer timer_meas_apply("Apply measurement");
     // Calls back core::ApplyCorrection(), which sets time_P_propagated to meas
     // time.
-      MSF_WARN_STREAM("Check the core status_wzd3"<< state);
-
     it_meas->second->Apply(state, *this);
     timer_meas_apply.Stop();
     // Make sure to propagate to next measurement or up to now if no more

@@ -1,0 +1,120 @@
+cmake_minimum_required(VERSION 3.15)
+project(MSF_BATC)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(build-msf_core-unknown-Default)
+include_directories(build-msf_core-unknown-Default/devel)
+include_directories(build-msf_core-unknown-Default/devel/include)
+include_directories(build-msf_core-unknown-Default/devel/include/msf_core)
+include_directories(msf_core/include)
+include_directories(msf_core/include/msf_core)
+include_directories(msf_core/include/msf_core/implementation)
+include_directories(msf_distort/cfg)
+include_directories(msf_distort/cfg/cpp)
+include_directories(msf_distort/cfg/cpp/msf_distort)
+include_directories(msf_timing/include)
+include_directories(msf_timing/include/msf_timing)
+include_directories(msf_updates/include)
+include_directories(msf_updates/include/msf_updates)
+include_directories(msf_updates/include/msf_updates/pose_sensor_handler)
+include_directories(msf_updates/include/msf_updates/pose_sensor_handler/implementation)
+include_directories(msf_updates/include/msf_updates/position_sensor_handler)
+include_directories(msf_updates/include/msf_updates/position_sensor_handler/implementation)
+include_directories(msf_updates/include/msf_updates/pressure_sensor_handler)
+include_directories(msf_updates/include/msf_updates/pressure_sensor_handler/implementation)
+include_directories(msf_updates/include/msf_updates/spherical_position_sensor)
+include_directories(msf_updates/include/msf_updates/spherical_position_sensor/implementation)
+include_directories(msf_updates/src/pose_msf)
+include_directories(msf_updates/src/pose_pressure_msf)
+include_directories(msf_updates/src/position_msf)
+include_directories(msf_updates/src/position_pose_msf)
+include_directories(msf_updates/src/spherical_msf)
+
+add_executable(MSF_BATC
+        build-msf_core-unknown-Default/devel/include/msf_core/MSF_CoreConfig.h
+        msf_core/include/msf_core/implementation/calcQCore.h
+        msf_core/include/msf_core/implementation/msf_core_inl.h
+        msf_core/include/msf_core/implementation/msf_measurement_inl.h
+        msf_core/include/msf_core/implementation/msf_sensormanager_inl.h
+        msf_core/include/msf_core/implementation/msf_state_inl.h
+        msf_core/include/msf_core/eigen_conversions.h
+        msf_core/include/msf_core/eigen_utils.h
+        msf_core/include/msf_core/falsecolor.h
+        msf_core/include/msf_core/gps_conversion.h
+        msf_core/include/msf_core/msf_checkFuzzyTracking.h
+        msf_core/include/msf_core/msf_core.h
+        msf_core/include/msf_core/msf_fwds.h
+        msf_core/include/msf_core/msf_IMUHandler.h
+        msf_core/include/msf_core/msf_IMUHandler_ROS.h
+        msf_core/include/msf_core/msf_macros.h
+        msf_core/include/msf_core/msf_measurement.h
+        msf_core/include/msf_core/msf_sensorhandler.h
+        msf_core/include/msf_core/msf_sensormanager.h
+        msf_core/include/msf_core/msf_sensormanagerROS.h
+        msf_core/include/msf_core/msf_sortedContainer.h
+        msf_core/include/msf_core/msf_state.h
+        msf_core/include/msf_core/msf_statevisitor.h
+        msf_core/include/msf_core/msf_tmp.h
+        msf_core/include/msf_core/msf_tools.h
+        msf_core/include/msf_core/msf_types.h
+        msf_core/include/msf_core/msf_typetraits.h
+        msf_core/include/msf_core/similaritytransform.h
+        msf_core/include/msf_core/sincos.h
+        msf_core/include/msf_core/static_ordering_assertions.h
+        msf_core/include/msf_core/testing_entrypoint.h
+        msf_core/include/msf_core/testing_predicates.h
+        msf_core/src/lib/falsecolor.cc
+        msf_core/src/lib/gps_conversion.cc
+        msf_core/src/lib/msf_tools.cc
+        msf_core/src/test/test_similaritytransform.cc
+        msf_core/src/test/test_staticstatelist.cc
+        msf_core/src/test/test_tmptestbed.cc
+        msf_core/src/similaritytransform.cc
+        msf_distort/cfg/cpp/msf_distort/MSF_DistortConfig.h
+        msf_distort/src/msf_distort.cc
+        msf_eval/Matlab/evaluation.m
+        msf_eval/Matlab/evaluation_cov.m
+        msf_eval/Matlab/matfig2pgf.m
+        msf_eval/Matlab/matfig2pgf_gui_options.m
+        msf_eval/Matlab/matfig2pgf_menu.m
+        msf_eval/Matlab/matfig2pgf_options.m
+        msf_eval/Matlab/plot_paths.m
+        msf_eval/src/msf_eval.cpp
+        msf_timing/include/msf_timing/Timer.h
+        msf_timing/src/test/testMSFTiming.cc
+        msf_timing/src/Timer.cc
+        msf_updates/include/msf_updates/pose_sensor_handler/implementation/pose_sensorhandler.hpp
+        msf_updates/include/msf_updates/pose_sensor_handler/pose_measurement.h
+        msf_updates/include/msf_updates/pose_sensor_handler/pose_sensorhandler.h
+        msf_updates/include/msf_updates/position_sensor_handler/implementation/position_sensorhandler.hpp
+        msf_updates/include/msf_updates/position_sensor_handler/position_measurement.h
+        msf_updates/include/msf_updates/position_sensor_handler/position_sensorhandler.h
+        msf_updates/include/msf_updates/pressure_sensor_handler/implementation/pressure_sensorhandler.hpp
+        msf_updates/include/msf_updates/pressure_sensor_handler/pressure_measurement.h
+        msf_updates/include/msf_updates/pressure_sensor_handler/pressure_sensorhandler.h
+        msf_updates/include/msf_updates/spherical_position_sensor/implementation/spherical_sensorhandler.hpp
+        msf_updates/include/msf_updates/spherical_position_sensor/spherical_measurement.h
+        msf_updates/include/msf_updates/spherical_position_sensor/spherical_sensorhandler.h
+        msf_updates/include/msf_updates/PoseDistorter.h
+        msf_updates/include/msf_updates/static_ordering_assertions.h
+        msf_updates/src/msf_distort/GPS_distorter.cc
+        msf_updates/src/msf_distort/PoseDistorter.cc
+        msf_updates/src/pose_msf/main.cpp
+        msf_updates/src/pose_msf/msf_statedef.hpp
+        msf_updates/src/pose_msf/pose_sensormanager.h
+        msf_updates/src/pose_pressure_msf/main.cpp
+        msf_updates/src/pose_pressure_msf/msf_statedef.hpp
+        msf_updates/src/pose_pressure_msf/pose_pressure_sensormanager.h
+        msf_updates/src/position_msf/main.cpp
+        msf_updates/src/position_msf/msf_statedef.hpp
+        msf_updates/src/position_msf/position_sensormanager.h
+        msf_updates/src/position_pose_msf/main.cpp
+        msf_updates/src/position_pose_msf/msf_statedef.hpp
+        msf_updates/src/position_pose_msf/position_pose_sensormanager.h
+        msf_updates/src/spherical_msf/main.cpp
+        msf_updates/src/spherical_msf/msf_statedef.hpp
+        msf_updates/src/spherical_msf/spherical_sensormanager.h
+        msf_updates/src/test/test_distort.cc
+        COPYRIGHT_Template.h)
